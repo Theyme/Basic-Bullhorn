@@ -17,8 +17,8 @@ public class Theyme {
     @Size(min=4)
     private String content;
 
-private Date postedate;
-
+private String postedate;
+private String headshot;
 @NotNull
     @Size(min=13)
     private String sentby;
@@ -47,11 +47,11 @@ private Date postedate;
         this.content = content;
     }
 
-    public Date getPostedate() {
+    public String getPostedate() {
         return postedate;
     }
 
-    public void setPostedate(Date postedate) {
+    public void setPostedate(String postedate) {
         this.postedate = postedate;
     }
 
@@ -61,5 +61,13 @@ private Date postedate;
 
     public void setSentby(String sentby) {
         this.sentby = sentby;
+    }
+
+    public String getHeadshot() {
+        return headshot;
+    }
+
+    public void setHeadshot(String headshot) {
+        this.headshot = headshot;
     }
 }

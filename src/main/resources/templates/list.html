@@ -8,6 +8,13 @@
 </head>
 <body>
 <a href="/add">Add a Message</a><br />
+<div th:each="theyme : ${theymes}">
+<div th:if="${theyme.headshot} != null">
+<img th:src="${theyme.headshot}"> />
+    <hr />
+</div>
+    <h3 th:text="${theyme.content}"></h3>
+    <h4 th:text="${theyme.postedate}"></h4>
 <div class="container">
     <div class="jumbotron">
         <h1>Welcome to Theyme Messenger</h1>
