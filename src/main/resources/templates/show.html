@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<a href="/">Show All Messages</a>br />
+Content :<span th:text="${theyme.content}" ></span><br />
+Post Date :<span th:text="${theyme.postedate}" ></span><br />
+Sent by :<p th:text="${theyme.sentby}" ></p>
+<a th:href="@{/delete{id}(id=${course.id})}">Delete this course</a>
+</body>
+</html>
